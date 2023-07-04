@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Dancing+Script:wght@500&family=Edu+VIC+WA+NT+Beginner&family=Great+Vibes&display=swap');
+
+*{
+    font-family: 'Dancing Script', cursive;
+}
+
+body{
+    background: linear-gradient(320deg, #489e2b, #dd8f12, #15e5bf);
+    min-height: 98.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#name{
+    color: azure;
+}
+
+.container{
+    background:rgba(236, 228, 228, 0.3) ;
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    user-select: none;
+}
+
+
+#displayArea{
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.116);
+    padding: 12px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+}
+
+#displayArea #currentValue{
+    text-align: right;
+    font-size: 30px;
+    color: rgb(209, 225, 238);
+    word-wrap: break-word;
+}
+
+#displayArea #answerScreen{
+    text-align: right;
+    font-size: 20px;
+    color: rgb(209, 225, 238);
+    word-wrap: break-word;
+}
+
+.keypadBtns{
+    display: flex;
+    flex-direction: column;
+}
+
+.keypadBtns .btnsRow{
+    display: flex;
+    flex-direction: row;
+}
+
+#keypadBtns .btnsRow button{
+    background: rgb(8, 8, 27);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 3px;
+}
+
+#keypadBtns .btnsRow button:hover{
+    cursor: pointer;
+}
+
+#keypadBtns .btnsRow button.fun_btn {
+    background: rgb(148, 60, 60) ;
+    font-size: 20px;
+}
+
+#keypadBtns .btnsRow button.fun_btn:hover, #keypadBtns button.fun_btn:active {
+    background: #ccccff;
+}
+
+#keypadBtns button.num_btn {
+    color: aliceblue;
+    font-size: 15px;
+}
+
+#keypadBtns .btnsRow button.num_btn:hover, .keypadBtns button.num_btn:active {
+    background: #ccccff;
+}
+
